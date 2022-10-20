@@ -1,0 +1,27 @@
+;;;==============
+;;;  JazzScheme
+;;;==============
+;;;
+;;;; Forces Run
+;;;
+
+
+(unit Forces.run
+
+
+;;;
+;;;; Run
+;;;
+
+
+(define (run descriptor)
+  (start-scheme-repl))
+
+
+;;;
+;;;; Register
+;;;
+
+
+(jazz:register-product-run 'Forces
+  run))

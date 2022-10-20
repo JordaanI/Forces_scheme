@@ -1,0 +1,24 @@
+;;;==============
+;;;  JazzScheme
+;;;==============
+;;;
+;;;; Jazz-Project
+;;;
+
+
+(data jazz.debugger.gambit.data.project
+
+
+(import (jazz.editor.jazz)
+        (jazz.project))
+
+
+(form
+  (<Jazz-Project>          name: Forces  directory: {Directory Projects} product: Forces
+    (<Project-File>                      source: {File :context "functions.scm"})
+    (<Project-File>                      source: {File :context "program.scm"})
+    (<Project-File>                      source: {File :context "data.txt"})
+    (<Project-Directory>                 directory: {Directory :context "src"}
+      (<Project-Directory>               directory: {Directory :context "src" "Forces"}
+        (<Jazz-File>       name: product source: {File :context "src" "Forces" "product.jazz"})
+        (<Jazz-File>       name: run     source: {File :context "src" "Forces" "run.jazz"}))))))
